@@ -1,0 +1,1181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亚洲成年人_影像观察_亚洲成年人企业级视频内容平台官网</title>
+<meta name="description" content="亚洲成年人官方网站，聚焦成年生活影像的原创视频内容生态，提供正版高清的访谈、观察与生活记录，为创作者与企业搭建值得信赖的品质平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a45'/%3E%3Ccircle cx='32' cy='26' r='10' fill='%23f2b544'/%3E%3Cpath d='M12 56c4-12 12-18 20-18s16 6 20 18z' fill='%23e8eef7'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ac-ink:#16233a;
+  --ac-ink-2:#25375a;
+  --ac-muted:#5b6b85;
+  --ac-line:#dde4ef;
+  --ac-paper:#f6f8fb;
+  --ac-white:#ffffff;
+  --ac-accent:#f2b544;
+  --ac-accent-deep:#c98a12;
+  --ac-blue:#2f5f9e;
+  --ac-shadow:0 10px 30px rgba(22,35,58,.10);
+  --ac-radius:16px;
+  --ac-head-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--ac-head-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--ac-paper);color:var(--ac-ink);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.ac-wrap{width:min(1180px,92vw);margin:0 auto}
+.ac-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- sticky 公告 + 页头 ---------- */
+.ac-topstack{position:sticky;top:0;z-index:80}
+.ac-notice{
+  background:linear-gradient(90deg,var(--ac-ink),var(--ac-ink-2));
+  color:#e8eef7;font-size:.86rem;padding:.5rem 0;
+}
+.ac-notice .ac-wrap{display:flex;gap:.9rem;align-items:center;flex-wrap:wrap}
+.ac-notice-tag{
+  background:var(--ac-accent);color:#1b2233;font-weight:700;
+  border-radius:4px;padding:.05rem .5rem;font-size:.76rem;letter-spacing:.04em;flex:none;
+}
+.ac-notice-list{display:flex;gap:1.4rem;flex-wrap:wrap;min-width:0}
+.ac-notice-list a{border-bottom:1px dashed rgba(232,238,247,.45);padding-bottom:1px}
+.ac-notice-list a:hover{color:var(--ac-accent);border-color:var(--ac-accent)}
+.ac-head{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--ac-line)}
+.ac-head-inner{display:flex;align-items:center;gap:1.4rem;padding:.75rem 0}
+.ac-brand{display:flex;align-items:center;gap:.65rem;flex:none}
+.ac-brand-mark{width:42px;height:42px;border-radius:12px;background:var(--ac-ink);display:grid;place-items:center;flex:none}
+.ac-brand-mark svg{width:24px;height:24px}
+.ac-brand-txt strong{display:block;font-size:1.16rem;letter-spacing:.06em;line-height:1.2}
+.ac-brand-txt span{font-size:.72rem;color:var(--ac-muted);letter-spacing:.18em}
+.ac-nav{display:flex;gap:1.15rem;margin-left:auto;font-size:.94rem;font-weight:500}
+.ac-nav a{padding:.35rem 0;border-bottom:2px solid transparent;color:var(--ac-ink-2)}
+.ac-nav a:hover{border-color:var(--ac-accent);color:var(--ac-blue)}
+.ac-head-tools{display:flex;align-items:center;gap:.6rem}
+.ac-search{position:relative;display:flex;align-items:center;background:var(--ac-paper);border:1px solid var(--ac-line);border-radius:999px;padding:.3rem .3rem .3rem .9rem;width:236px}
+.ac-search input{border:none;background:none;outline:none;width:100%;font-size:.9rem;color:var(--ac-ink)}
+.ac-search input::placeholder{color:#93a1b8}
+.ac-search button{background:var(--ac-ink);color:#fff;border-radius:999px;padding:.3rem .8rem;font-size:.84rem}
+.ac-search-feedback{
+  position:absolute;top:calc(100% + .5rem);left:0;right:0;background:#fff;border:1px solid var(--ac-line);
+  border-radius:12px;box-shadow:var(--ac-shadow);padding:.6rem .8rem;font-size:.85rem;color:var(--ac-muted);
+  display:none;z-index:90;
+}
+.ac-search-feedback.is-open{display:block}
+.ac-search-feedback b{color:var(--ac-blue)}
+.ac-btn{
+  display:inline-flex;align-items:center;gap:.4rem;border-radius:999px;padding:.55rem 1.2rem;
+  font-size:.92rem;font-weight:600;transition:.22s;
+}
+.ac-btn-primary{background:var(--ac-ink);color:#fff}
+.ac-btn-primary:hover{background:var(--ac-blue);transform:translateY(-1px)}
+.ac-btn-gold{background:var(--ac-accent);color:#1b2233}
+.ac-btn-gold:hover{background:#ffc95c;transform:translateY(-1px)}
+.ac-btn-ghost{border:1px solid var(--ac-line);color:var(--ac-ink-2);background:#fff}
+.ac-btn-ghost:hover{border-color:var(--ac-blue);color:var(--ac-blue)}
+.ac-burger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--ac-line);background:#fff}
+.ac-burger span{display:block;width:18px;height:2px;background:var(--ac-ink);margin:3px auto;transition:.2s}
+.ac-burger.is-open span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.ac-burger.is-open span:nth-child(2){opacity:0}
+.ac-burger.is-open span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+
+/* ---------- 首屏 6:4 ---------- */
+.ac-hero{padding:3.2rem 0 2.6rem;background:
+  radial-gradient(900px 340px at 82% -8%,rgba(242,181,68,.20),transparent 70%),
+  radial-gradient(700px 300px at 4% 110%,rgba(47,95,158,.12),transparent 70%),
+  var(--ac-white);
+  border-bottom:1px solid var(--ac-line);
+}
+.ac-hero-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:2.6rem;align-items:center}
+.ac-kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;letter-spacing:.16em;color:var(--ac-accent-deep);font-weight:700;text-transform:uppercase}
+.ac-kicker::before{content:"";width:26px;height:2px;background:var(--ac-accent-deep)}
+.ac-hero h1{font-size:clamp(2.4rem,5.4vw,4rem);line-height:1.1;letter-spacing:-.01em;margin:.7rem 0 .3rem;font-weight:800}
+.ac-hero-sub{font-size:clamp(1rem,1.6vw,1.22rem);color:var(--ac-ink-2);font-weight:600;margin-bottom:.9rem}
+.ac-hero-intro{color:var(--ac-muted);font-size:.98rem;max-width:36em}
+.ac-hero-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.5rem 0 1.8rem}
+.ac-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;border-top:1px solid var(--ac-line);padding-top:1.3rem}
+.ac-stat b{display:block;font-size:1.5rem;font-weight:800;color:var(--ac-ink)}
+.ac-stat span{font-size:.82rem;color:var(--ac-muted)}
+.ac-hero-visual{position:relative}
+.ac-hero-frame{border-radius:22px;overflow:hidden;box-shadow:0 26px 60px rgba(22,35,58,.24);border:6px solid #fff}
+.ac-hero-frame img{width:100%;aspect-ratio:4/3.2;object-fit:cover}
+.ac-hero-badge{
+  position:absolute;left:-14px;bottom:20px;background:#fff;border-radius:14px;padding:.7rem .9rem;
+  box-shadow:var(--ac-shadow);display:flex;align-items:center;gap:.6rem;font-size:.82rem;font-weight:600;
+}
+.ac-hero-badge i{width:34px;height:34px;border-radius:10px;background:var(--ac-accent);display:grid;place-items:center;font-style:normal;font-weight:800;color:#1b2233}
+.ac-hero-badge small{display:block;color:var(--ac-muted);font-weight:400;font-size:.74rem}
+
+/* ---------- 通用 section ---------- */
+.ac-section{padding:3.4rem 0}
+.ac-section.alt{background:var(--ac-white);border-top:1px solid var(--ac-line);border-bottom:1px solid var(--ac-line)}
+.ac-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;margin-bottom:1.9rem}
+.ac-section-head h2{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-.01em;line-height:1.25}
+.ac-section-head h2 span{color:var(--ac-accent-deep)}
+.ac-section-desc{color:var(--ac-muted);font-size:.94rem;max-width:46em;margin-top:.45rem}
+.ac-eyebrow{font-size:.76rem;letter-spacing:.2em;color:var(--ac-blue);font-weight:700;text-transform:uppercase;margin-bottom:.4rem;display:block}
+
+/* ---------- 热点大图 + 文字列表 ---------- */
+.ac-focus-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:1.8rem;align-items:start}
+.ac-feature{background:#fff;border-radius:var(--ac-radius);overflow:hidden;border:1px solid var(--ac-line);box-shadow:var(--ac-shadow)}
+.ac-feature img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.ac-feature-body{padding:1.3rem 1.4rem 1.4rem}
+.ac-feature-body h3{font-size:1.32rem;line-height:1.35;margin:.45rem 0 .5rem}
+.ac-feature-body p{color:var(--ac-muted);font-size:.93rem}
+.ac-meta{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.8rem;color:var(--ac-muted);margin-top:.8rem;align-items:center}
+.ac-chip{display:inline-block;background:rgba(47,95,158,.1);color:var(--ac-blue);border-radius:999px;padding:.12rem .6rem;font-size:.74rem;font-weight:600}
+.ac-chip.gold{background:rgba(242,181,68,.22);color:#8a5c00}
+.ac-vlist{display:grid;gap:.9rem}
+.ac-vitem{background:#fff;border:1px solid var(--ac-line);border-radius:14px;padding:1rem 1.1rem;transition:.22s;display:grid;gap:.4rem}
+.ac-vitem:hover{border-color:var(--ac-accent);transform:translateX(3px);box-shadow:var(--ac-shadow)}
+.ac-vitem h4{font-size:1rem;line-height:1.4}
+.ac-vitem p{font-size:.86rem;color:var(--ac-muted)}
+.ac-vitem .ac-meta{margin-top:.2rem}
+.ac-ops{display:flex;gap:.5rem;margin-top:.55rem;flex-wrap:wrap}
+.ac-op{font-size:.78rem;border:1px solid var(--ac-line);border-radius:999px;padding:.2rem .7rem;color:var(--ac-ink-2);background:#fff;display:inline-flex;gap:.3rem;align-items:center;transition:.18s}
+.ac-op:hover{border-color:var(--ac-blue);color:var(--ac-blue)}
+.ac-op.is-on{background:rgba(242,181,68,.2);border-color:var(--ac-accent);color:#8a5c00;font-weight:600}
+
+/* ---------- 品牌故事时间线 ---------- */
+.ac-story{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:2.4rem;align-items:start}
+.ac-story-figure img{width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:20px;box-shadow:var(--ac-shadow)}
+.ac-story-figure figcaption{font-size:.8rem;color:var(--ac-muted);margin-top:.6rem}
+.ac-timeline{position:relative;padding-left:1.4rem;border-left:2px dashed var(--ac-line)}
+.ac-tl-item{position:relative;padding:0 0 1.5rem .4rem}
+.ac-tl-item::before{content:"";position:absolute;left:-1.85rem;top:.4rem;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--ac-accent)}
+.ac-tl-item b{font-size:.8rem;color:var(--ac-accent-deep);letter-spacing:.06em}
+.ac-tl-item h3{font-size:1.08rem;margin:.2rem 0 .3rem}
+.ac-tl-item p{font-size:.9rem;color:var(--ac-muted)}
+
+/* ---------- 专题 ---------- */
+.ac-topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.4rem}
+.ac-topic{background:#fff;border-radius:var(--ac-radius);border:1px solid var(--ac-line);overflow:hidden;display:flex;flex-direction:column}
+.ac-topic-img{position:relative}
+.ac-topic-img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.ac-topic-status{position:absolute;top:.7rem;left:.7rem;background:rgba(22,35,58,.86);color:#ffe6b0;font-size:.72rem;border-radius:999px;padding:.15rem .65rem}
+.ac-topic-body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.ac-topic-body h3{font-size:1.1rem}
+.ac-topic-body>p{font-size:.88rem;color:var(--ac-muted)}
+.ac-topic-list{display:grid;gap:.35rem;font-size:.86rem;color:var(--ac-ink-2)}
+.ac-topic-list li{padding-left:1.1rem;position:relative}
+.ac-topic-list li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:2px;background:var(--ac-accent)}
+
+/* ---------- 作者矩阵 双列 ---------- */
+.ac-authors{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1.3rem}
+.ac-author{background:#fff;border:1px solid var(--ac-line);border-radius:var(--ac-radius);padding:1.2rem;display:flex;gap:1rem;align-items:flex-start}
+.ac-avatar{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;font-weight:800;font-size:1.2rem;color:#fff;flex:none;line-height:1}
+.ac-av-1{background:linear-gradient(135deg,#2f5f9e,#1b2a45)}
+.ac-av-2{background:linear-gradient(135deg,#c98a12,#f2b544);color:#241a00}
+.ac-av-3{background:linear-gradient(135deg,#3d8c74,#1f5a4a)}
+.ac-av-4{background:linear-gradient(135deg,#8a5cb8,#4b2f7a)}
+.ac-av-5{background:linear-gradient(135deg,#c4553f,#7d2c1e)}
+.ac-author h3{font-size:1rem}
+.ac-author .ac-role{font-size:.78rem;color:var(--ac-accent-deep);font-weight:700}
+.ac-author p{font-size:.85rem;color:var(--ac-muted);margin-top:.35rem}
+.ac-author-stats{display:flex;gap:.9rem;font-size:.78rem;color:var(--ac-ink-2);margin-top:.5rem;font-weight:600}
+.ac-author-more{margin-top:.6rem;font-size:.8rem;color:var(--ac-blue);font-weight:600;background:none;padding:0;text-align:left}
+.ac-author-more:hover{text-decoration:underline}
+
+/* ---------- 评论区：评分摘要 + 短评列表 ---------- */
+.ac-reviews{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:2rem;align-items:start}
+.ac-scoreboard{background:linear-gradient(160deg,var(--ac-ink),var(--ac-ink-2));color:#eef3fa;border-radius:20px;padding:1.6rem 1.5rem;box-shadow:var(--ac-shadow)}
+.ac-scoreboard .big{font-size:3rem;font-weight:800;line-height:1;color:#fff}
+.ac-scoreboard .big small{font-size:.9rem;font-weight:500;color:#b9c6da}
+.ac-scoreboard .stars{color:var(--ac-accent);font-size:1.05rem;letter-spacing:.1em;margin:.5rem 0 .9rem}
+.ac-bar{display:grid;grid-template-columns:2.2rem 1fr 2.4rem;align-items:center;gap:.5rem;font-size:.76rem;color:#c3cfe2;margin-bottom:.4rem}
+.ac-bar i{height:6px;border-radius:99px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.ac-bar i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w,60%);background:var(--ac-accent);border-radius:99px}
+.ac-review-list{display:grid;gap:1rem}
+.ac-review{background:#fff;border:1px solid var(--ac-line);border-left:4px solid var(--ac-accent);border-radius:12px;padding:1rem 1.2rem}
+.ac-review p{font-size:.92rem;color:var(--ac-ink-2)}
+.ac-review footer{margin-top:.55rem;font-size:.78rem;color:var(--ac-muted);display:flex;gap:.7rem;flex-wrap:wrap;align-items:center}
+.ac-review footer b{color:var(--ac-ink)}
+
+/* ---------- 图文索引 ---------- */
+.ac-index{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1.3rem}
+.ac-index-card{background:#fff;border:1px solid var(--ac-line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:.22s}
+.ac-index-card:hover{transform:translateY(-4px);box-shadow:var(--ac-shadow)}
+.ac-index-card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.ac-index-card div{padding:.95rem 1rem 1.1rem}
+.ac-index-card h3{font-size:.98rem;line-height:1.45;margin-bottom:.35rem}
+.ac-index-card p{font-size:.84rem;color:var(--ac-muted)}
+
+/* ---------- 深度解析（长文） ---------- */
+.ac-deep{background:#fff;border:1px solid var(--ac-line);border-radius:20px;padding:clamp(1.4rem,3vw,2.6rem);box-shadow:var(--ac-shadow)}
+.ac-deep h2{font-size:clamp(1.4rem,2.4vw,1.9rem);margin-bottom:.6rem}
+.ac-deep>p{color:var(--ac-muted);font-size:.95rem;margin-bottom:1.4rem}
+.ac-deep h3{font-size:1.1rem;margin:1.5rem 0 .5rem;padding-left:.7rem;border-left:4px solid var(--ac-accent)}
+.ac-deep p{font-size:.94rem;color:#3d4c66;margin-bottom:.7rem}
+.ac-deep figure{margin:1.3rem 0}
+.ac-deep figure img{width:100%;border-radius:14px;aspect-ratio:16/7;object-fit:cover}
+.ac-deep figcaption{font-size:.78rem;color:var(--ac-muted);margin-top:.45rem}
+.ac-deep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem;margin:1rem 0}
+.ac-deep-note{background:var(--ac-paper);border-radius:12px;padding:1rem 1.1rem;font-size:.88rem;color:var(--ac-ink-2)}
+.ac-deep-note b{display:block;margin-bottom:.25rem;color:var(--ac-ink)}
+
+/* ---------- 动态 / 合作 ---------- */
+.ac-split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:2rem;align-items:start}
+.ac-news{display:grid;gap:.8rem}
+.ac-news-item{display:grid;grid-template-columns:4.2rem 1fr;gap:1rem;background:#fff;border:1px solid var(--ac-line);border-radius:12px;padding:.9rem 1rem}
+.ac-news-date{font-size:.76rem;color:var(--ac-accent-deep);font-weight:700;text-align:center;border-right:1px solid var(--ac-line);padding-right:.6rem}
+.ac-news-date b{display:block;font-size:1.15rem;color:var(--ac-ink)}
+.ac-news-item h3{font-size:.98rem}
+.ac-news-item p{font-size:.84rem;color:var(--ac-muted)}
+.ac-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+.ac-partner{background:#fff;border:1px solid var(--ac-line);border-radius:12px;padding:.9rem .8rem;text-align:center;font-size:.84rem;font-weight:600;color:var(--ac-ink-2);transition:.2s}
+.ac-partner:hover{border-color:var(--ac-blue);color:var(--ac-blue)}
+.ac-partner span{display:block;font-size:.7rem;color:var(--ac-muted);font-weight:400;margin-top:.15rem}
+
+/* ---------- FAQ ---------- */
+.ac-faq{display:grid;gap:.7rem;max-width:900px;margin:0 auto}
+.ac-faq details{background:#fff;border:1px solid var(--ac-line);border-radius:12px;padding:.9rem 1.1rem;transition:.2s}
+.ac-faq details[open]{border-color:var(--ac-accent);box-shadow:var(--ac-shadow)}
+.ac-faq summary{font-weight:600;font-size:.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.ac-faq summary::-webkit-details-marker{display:none}
+.ac-faq summary::after{content:"+";font-size:1.2rem;color:var(--ac-accent-deep);line-height:1;flex:none}
+.ac-faq details[open] summary::after{content:"–"}
+.ac-faq p{font-size:.88rem;color:var(--ac-muted);margin-top:.55rem;border-top:1px dashed var(--ac-line);padding-top:.55rem}
+
+/* ---------- 页脚 ---------- */
+.ac-foot{background:var(--ac-ink);color:#c9d5e8;padding:3rem 0 1.6rem;margin-top:1rem}
+.ac-foot-grid{display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));gap:2rem}
+.ac-foot h3{color:#fff;font-size:.95rem;margin-bottom:.7rem;letter-spacing:.04em}
+.ac-foot p{font-size:.85rem;color:#a9b8d0}
+.ac-foot ul{display:grid;gap:.4rem;font-size:.85rem}
+.ac-foot ul a{color:#b9c6da}
+.ac-foot ul a:hover{color:var(--ac-accent)}
+.ac-foot-brand{display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.ac-foot-brand .ac-brand-mark{background:#24365a}
+.ac-foot-brand strong{color:#fff;font-size:1.05rem;letter-spacing:.05em}
+.ac-foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2rem;padding-top:1.1rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.78rem;color:#8fa1bd}
+
+/* ---------- 回到顶部 ---------- */
+.ac-top-btn{position:fixed;right:1.2rem;bottom:1.2rem;width:46px;height:46px;border-radius:14px;background:var(--ac-ink);color:#fff;display:grid;place-items:center;box-shadow:var(--ac-shadow);opacity:0;pointer-events:none;transition:.25s;z-index:70;font-size:1.1rem}
+.ac-top-btn.is-show{opacity:1;pointer-events:auto}
+.ac-top-btn:hover{background:var(--ac-blue)}
+
+/* ---------- Toast / 弹窗 ---------- */
+.ac-toast{position:fixed;left:50%;bottom:2rem;transform:translate(-50%,14px);background:rgba(22,35,58,.95);color:#fff;font-size:.86rem;padding:.6rem 1.1rem;border-radius:999px;opacity:0;pointer-events:none;transition:.25s;z-index:120}
+.ac-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.ac-modal{position:fixed;inset:0;background:rgba(15,24,40,.55);display:none;place-items:center;padding:1.2rem;z-index:110}
+.ac-modal.is-open{display:grid}
+.ac-modal-box{background:#fff;border-radius:18px;max-width:460px;width:100%;padding:1.5rem;box-shadow:0 30px 70px rgba(0,0,0,.32);position:relative}
+.ac-modal-box h3{font-size:1.1rem;margin-bottom:.5rem}
+.ac-modal-box p{font-size:.88rem;color:var(--ac-muted)}
+.ac-modal-close{position:absolute;top:.7rem;right:.8rem;font-size:1.2rem;color:var(--ac-muted);width:32px;height:32px;border-radius:50%}
+.ac-modal-close:hover{background:var(--ac-paper);color:var(--ac-ink)}
+.ac-modal-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+
+@media (max-width:980px){
+  :root{--ac-head-h:104px}
+  .ac-hero-grid{grid-template-columns:1fr;gap:2rem}
+  .ac-focus-grid,.ac-story,.ac-reviews,.ac-split{grid-template-columns:1fr}
+  .ac-foot-grid{grid-template-columns:1fr 1fr}
+  .ac-search{width:180px}
+  .ac-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--ac-line);padding:.6rem 4vw 1rem;flex-direction:column;gap:.2rem;box-shadow:var(--ac-shadow)}
+  .ac-nav.is-open{display:flex}
+  .ac-nav a{padding:.6rem 0;border-bottom:1px solid var(--ac-paper)}
+  .ac-burger{display:block}
+  .ac-head-inner{position:relative;flex-wrap:wrap}
+}
+@media (max-width:640px){
+  .ac-stats{grid-template-columns:1fr}
+  .ac-notice-list{font-size:.8rem;gap:.9rem}
+  .ac-hero-actions .ac-btn{flex:1;justify-content:center}
+  .ac-foot-grid{grid-template-columns:1fr}
+  .ac-partners{grid-template-columns:1fr 1fr}
+  .ac-search{width:100%;order:3;flex:1}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ======== S1 公告条 + 页头（一同吸顶） ======== -->
+<div class="ac-topstack" id="acTop">
+  <div class="ac-notice" role="region" aria-label="官方公告">
+    <div class="ac-wrap">
+      <span class="ac-notice-tag">官方发布</span>
+      <div class="ac-notice-list">
+        <a href="#acTopics">「成年生活图鉴」第二季 12 月 3 日全网上线</a>
+        <a href="#acNews">创作者扶持计划 2026 冬季批次开放报名</a>
+        <a href="#acReviews">「城市夜归人」口碑专场高清重制版已更新</a>
+      </div>
+    </div>
+  </div>
+  <header class="ac-head">
+    <div class="ac-wrap ac-head-inner">
+      <div class="ac-brand">
+        <div class="ac-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.5" r="3.6" fill="#f2b544"/><path d="M4 21c1.6-4.6 4.6-6.8 8-6.8s6.4 2.2 8 6.8z" fill="#e8eef7"/></svg>
+        </div>
+        <div class="ac-brand-txt">
+          <strong>亚洲成年人</strong>
+          <span>OFFICIAL VIDEO</span>
+        </div>
+      </div>
+      <nav class="ac-nav" id="acNav" aria-label="主导航">
+        <a href="#acHero">品牌首页</a>
+        <a href="#acFocus">影像精选</a>
+        <a href="#acTopics">专题企划</a>
+        <a href="#acAuthors">创作者</a>
+        <a href="#acDeep">深度观察</a>
+        <a href="#acNews">企业动态</a>
+        <a href="#acFaq">帮助</a>
+      </nav>
+      <div class="ac-head-tools">
+        <form class="ac-search" id="acSearchForm" role="search" onsubmit="return false;">
+          <label class="ac-sr" for="acSearchInput">站内搜索</label>
+          <input id="acSearchInput" type="search" placeholder="搜索内容 / 创作者" autocomplete="off">
+          <button type="submit" id="acSearchBtn">搜索</button>
+          <div class="ac-search-feedback" id="acSearchFeedback" aria-live="polite"></div>
+        </form>
+        <button class="ac-btn ac-btn-primary" id="acSubmitBtn" type="button">投稿</button>
+        <button class="ac-burger" id="acBurger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="acNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+<!-- ======== S2 / M1 首屏 6:4 ======== -->
+<section class="ac-hero" id="acHero">
+  <div class="ac-wrap ac-hero-grid">
+    <div>
+      <span class="ac-kicker">官方网站 · 成年影像内容平台</span>
+      <h1>亚洲成年人</h1>
+      <p class="ac-hero-sub">记录成年人的真实生活现场，做值得信赖的原创视频内容品牌。</p>
+      <p class="ac-hero-intro">
+        亚洲成年人官方网站是一家深耕成年生活影像的垂直内容企业，以原创、正版、高清为内容底线，围绕职场、家庭、关系与自我成长持续出品访谈、观察与生活记录。我们为企业与创作者搭建高品质内容生态，用镜头呈现亚洲成年人多元、真实、有力量的日常，让每一次讲述都被认真对待。
+      </p>
+      <div class="ac-hero-actions">
+        <a class="ac-btn ac-btn-gold" href="#acFocus">观看精选影像</a>
+        <a class="ac-btn ac-btn-ghost" href="#acAuthors">认识创作者</a>
+        <a class="ac-btn ac-btn-ghost" href="#acSubmitBox">加入投稿计划</a>
+      </div>
+      <div class="ac-stats">
+        <div class="ac-stat"><b>1,860+</b><span>上线原创影像作品</span></div>
+        <div class="ac-stat"><b>320 万</b><span>月度观看人次</span></div>
+        <div class="ac-stat"><b>96.4%</b><span>内容口碑好评率</span></div>
+      </div>
+    </div>
+    <div class="ac-hero-visual">
+      <div class="ac-hero-frame">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 580'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231b2a45'/%3E%3Cstop offset='1' stop-color='%233d5b86'/%3E%3C/linearGradient%3E%3ClinearGradient id='win' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f2b544'/%3E%3Cstop offset='1' stop-color='%23e08b2a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='580' fill='url(%23sky)'/%3E%3Ccircle cx='560' cy='120' r='70' fill='%23f7d38a' opacity='.5'/%3E%3Crect x='80' y='180' width='150' height='400' fill='%23243759'/%3E%3Crect x='250' y='120' width='190' height='460' fill='%231e2f4d'/%3E%3Crect x='460' y='220' width='180' height='360' fill='%232a3f63'/%3E%3Cg fill='url(%23win)' opacity='.85'%3E%3Crect x='104' y='210' width='26' height='34' rx='3'/%3E%3Crect x='146' y='210' width='26' height='34' rx='3'/%3E%3Crect x='104' y='272' width='26' height='34' rx='3'/%3E%3Crect x='146' y='272' width='26' height='34' rx='3'/%3E%3Crect x='104' y='334' width='26' height='34' rx='3'/%3E%3Crect x='276' y='160' width='30' height='40' rx='3'/%3E%3Crect x='322' y='160' width='30' height='40' rx='3'/%3E%3Crect x='368' y='160' width='30' height='40' rx='3'/%3E%3Crect x='276' y='230' width='30' height='40' rx='3'/%3E%3Crect x='368' y='230' width='30' height='40' rx='3'/%3E%3Crect x='322' y='300' width='30' height='40' rx='3'/%3E%3Crect x='490' y='260' width='24' height='32' rx='3'/%3E%3Crect x='530' y='260' width='24' height='32' rx='3'/%3E%3Crect x='570' y='260' width='24' height='32' rx='3'/%3E%3Crect x='490' y='320' width='24' height='32' rx='3'/%3E%3Crect x='570' y='320' width='24' height='32' rx='3'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='345' cy='410' r='26' fill='%23e8eef7'/%3E%3Cpath d='M312 520c6-36 19-54 33-54s27 18 33 54z' fill='%23e8eef7'/%3E%3C/g%3E%3Crect y='540' width='720' height='40' fill='%23142034'/%3E%3C/svg%3E" alt="亚洲成年人品牌主视觉：夜色中的城市天际线与窗前人物的成年生活剪影" width="720" height="580">
+      </div>
+      <div class="ac-hero-badge">
+        <i>4K</i>
+        <div>全景高清首映<small>《城市夜归人》纪录片 · 官方正版</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== S3 焦点内容（大图 + 文字列表） ======== -->
+<section class="ac-section" id="acFocus">
+  <div class="ac-wrap">
+    <div class="ac-section-head">
+      <div>
+        <span class="ac-eyebrow">Focus / 影像精选</span>
+        <h2>本周焦点：把成年人的一天<span>讲完整</span></h2>
+        <p class="ac-section-desc">亚洲成年人内容团队本周上线 6 部新作，从凌晨四点的早餐铺到深夜写字楼的灯光，我们把镜头交给真实生活，而不是脚本设定。</p>
+      </div>
+      <a class="ac-btn ac-btn-ghost" href="#acIndex">查看全部片单</a>
+    </div>
+
+    <div class="ac-focus-grid">
+      <article class="ac-feature">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='morn' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f8d9a0'/%3E%3Cstop offset='1' stop-color='%23e58b52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23morn)'/%3E%3Crect y='300' width='800' height='150' fill='%238a4c2a' opacity='.55'/%3E%3Cg fill='%23fff3dd'%3E%3Crect x='120' y='230' width='180' height='12' rx='6'/%3E%3Crect x='140' y='198' width='140' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%233d2a1c'%3E%3Ccircle cx='210' cy='190' r='24'/%3E%3Cpath d='M182 262c5-26 15-39 28-39s23 13 28 39z'/%3E%3Ccircle cx='470' cy='200' r='20'/%3E%3Cpath d='M448 262c4-22 12-33 22-33s18 11 22 33z'/%3E%3C/g%3E%3Cg stroke='%23fff8ea' stroke-width='6' opacity='.7'%3E%3Cpath d='M330 170c0-16 12-24 24-24s24 8 24 24' fill='none'/%3E%3C/g%3E%3Crect x='600' y='120' width='130' height='90' rx='8' fill='%23fff3dd' opacity='.65'/%3E%3C/svg%3E" alt="凌晨四点早餐铺的成年店主在蒸汽中准备第一笼包子的纪录片画面" width="800" height="450">
+        <div class="ac-feature-body">
+          <span class="ac-chip gold">深度访谈 · 首播</span>
+          <h3>《凌晨四点的早餐铺》：一对夫妻与三十年的清晨</h3>
+          <p>凌晨三点半起床，四点开火，六点迎来第一批客人。我们用三个月的跟拍，记录一对成年夫妻在城市街角的三十年。他们不谈梦想，只谈明天的面要发多久。这支片子是亚洲成年人「日常记录」企划的开篇，也是我们理解的品质内容——不煽情，但足够真实。</p>
+          <div class="ac-meta">
+            <span>创作者：程野工作室</span><span>42:16</span><span>播放 128.6 万</span><span>点赞 3.2 万</span>
+          </div>
+          <div class="ac-ops">
+            <button class="ac-op" type="button" data-like>♥ <span>3.2万</span></button>
+            <button class="ac-op" type="button" data-fav>收藏</button>
+            <button class="ac-op" type="button" data-share>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="ac-vlist">
+        <article class="ac-vitem">
+          <h4>《工位之外》EP07：35 岁转行做面包师的第一百天</h4>
+          <p>一位前财务主管的成年选择：辞掉稳定工作，去学一门手艺。镜头跟进了她的搅拌机与失眠。</p>
+          <div class="ac-meta"><span class="ac-chip">人物访谈</span><span>苏杏</span><span>18:42</span><span>播放 46.1 万</span></div>
+          <div class="ac-ops">
+            <button class="ac-op" type="button" data-like>♥ <span>9,840</span></button>
+            <button class="ac-op" type="button" data-fav>收藏</button>
+            <button class="ac-op" type="button" data-share>分享</button>
+          </div>
+        </article>
+        <article class="ac-vitem">
+          <h4>《两个人的饭桌》：成年人的关系，藏在谁洗碗里</h4>
+          <p>四对伴侣的一周晚餐记录，从买菜到收拾厨房，我们只拍生活，不做评判。</p>
+          <div class="ac-meta"><span class="ac-chip">生活记录</span><span>陆知微</span><span>24:05</span><span>播放 63.8 万</span></div>
+          <div class="ac-ops">
+            <button class="ac-op" type="button" data-like>♥ <span>1.4万</span></button>
+            <button class="ac-op" type="button" data-fav>收藏</button>
+            <button class="ac-op" type="button" data-share>分享</button>
+          </div>
+        </article>
+        <article class="ac-vitem">
+          <h4>《城市夜归人》：地铁末班车上的十二种睡姿</h4>
+          <p>一支没有旁白的城市观察短片，记录成年人下班后的疲惫与体面。</p>
+          <div class="ac-meta"><span class="ac-chip">城市探索</span><span>林岸</span><span>12:30</span><span>播放 92.4 万</span></div>
+          <div class="ac-ops">
+            <button class="ac-op" type="button" data-like>♥ <span>2.1万</span></button>
+            <button class="ac-op" type="button" data-fav>收藏</button>
+            <button class="ac-op" type="button" data-share>分享</button>
+          </div>
+        </article>
+        <article class="ac-vitem">
+          <h4>《交给我吧》：独居成年人第一次装一台洗衣机</h4>
+          <p>实用技巧向内容：从选型到安装，成年人独立生活的第一课，全程无广告。</p>
+          <div class="ac-meta"><span class="ac-chip">实用技巧</span><span>何小满</span><span>15:22</span><span>播放 38.7 万</span></div>
+          <div class="ac-ops">
+            <button class="ac-op" type="button" data-like>♥ <span>7,120</span></button>
+            <button class="ac-op" type="button" data-fav>收藏</button>
+            <button class="ac-op" type="button" data-share>分享</button>
+          </div>
+        </article>
+        <article class="ac-vitem">
+          <h4>《给自己的信》：写给四十岁的成年人</h4>
+          <p>十位普通成年人朗读十年前写给自己的信，镜头只拍手和信纸。</p>
+          <div class="ac-meta"><span class="ac-chip">情感故事</span><span>周而</span><span>09:48</span><span>播放 55.2 万</span></div>
+          <div class="ac-ops">
+            <button class="ac-op" type="button" data-like>♥ <span>1.1万</span></button>
+            <button class="ac-op" type="button" data-fav>收藏</button>
+            <button class="ac-op" type="button" data-share>分享</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== S4 专题企划 ======== -->
+<section class="ac-section alt" id="acTopics">
+  <div class="ac-wrap">
+    <div class="ac-section-head">
+      <div>
+        <span class="ac-eyebrow">Series / 专题企划</span>
+        <h2>四个长期企划，持续记录<span>亚洲成年人的多面</span></h2>
+        <p class="ac-section-desc">专题不是一次性的热门，而是我们对一个群体的长期承诺。每个企划均由编辑部与创作者共同推进，按季度更新，全部内容正版高清、可追溯来源。</p>
+      </div>
+    </div>
+    <div class="ac-topics">
+      <article class="ac-topic">
+        <div class="ac-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%232f5f9e'/%3E%3Cg fill='%23e8eef7' opacity='.9'%3E%3Crect x='70' y='150' width='120' height='140' rx='6'/%3E%3Crect x='210' y='100' width='90' height='190' rx='6'/%3E%3Crect x='320' y='60' width='150' height='230' rx='6'/%3E%3C/g%3E%3Cg fill='%23f2b544'%3E%3Crect x='92' y='172' width='24' height='24'/%3E%3Crect x='132' y='172' width='24' height='24'/%3E%3Crect x='92' y='216' width='24' height='24'/%3E%3Crect x='348' y='92' width='30' height='30'/%3E%3Crect x='398' y='92' width='30' height='30'/%3E%3Crect x='348' y='146' width='30' height='30'/%3E%3C/g%3E%3Ccircle cx='500' cy='60' r='34' fill='%23f7d38a' opacity='.7'/%3E%3C/svg%3E" alt="成年生活图鉴专题主视觉：蓝色城市建筑群与亮灯窗口" width="600" height="340">
+          <span class="ac-topic-status">更新至 EP12</span>
+        </div>
+        <div class="ac-topic-body">
+          <h3>成年生活图鉴</h3>
+          <p>以城市为单位，记录 25–45 岁成年人的日常切面：通勤、租房、体检、家庭聚餐与深夜独处。</p>
+          <ul class="ac-topic-list">
+            <li>EP12《我住在离公司十二站的地方》</li>
+            <li>EP11《体检报告出来那天》</li>
+            <li>EP10《和父母的第一顿和解饭》</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="ac-topic">
+        <div class="ac-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%233d8c74'/%3E%3Cpath d='M0 260 Q150 200 300 250 T600 230 V340 H0Z' fill='%231f5a4a'/%3E%3Cg fill='%23f2e6c8'%3E%3Ccircle cx='140' cy='190' r='22'/%3E%3Cpath d='M112 258c5-24 14-36 28-36s23 12 28 36z'/%3E%3Ccircle cx='420' cy='180' r='20'/%3E%3Cpath d='M396 258c4-22 11-33 24-33s20 11 24 33z'/%3E%3C/g%3E%3Cg stroke='%23f2e6c8' stroke-width='4' opacity='.6' fill='none'%3E%3Cpath d='M270 120c20-18 40-18 60 0'/%3E%3Cpath d='M280 140c16-14 32-14 48 0'/%3E%3C/g%3E%3C/svg%3E" alt="手艺人的选择专题主视觉：绿色山野背景中的手作人物剪影" width="600" height="340">
+          <span class="ac-topic-status">更新至 EP08</span>
+        </div>
+        <div class="ac-topic-body">
+          <h3>手艺人的选择</h3>
+          <p>成年人的第二次职业选择。每期跟拍一位转行进入手作、维修、餐饮的成年人，完整记录他们的账本与犹豫。</p>
+          <ul class="ac-topic-list">
+            <li>EP08《修表匠的第七年》</li>
+            <li>EP07《离开大厂去开面馆》</li>
+            <li>EP06《在县城做木工的女人》</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="ac-topic">
+        <div class="ac-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 340'%3E%3Cdefs%3E%3ClinearGradient id='night' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b2a45'/%3E%3Cstop offset='1' stop-color='%234b2f7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='340' fill='url(%23night)'/%3E%3Cg fill='%23f2b544' opacity='.85'%3E%3Ccircle cx='90' cy='70' r='3'/%3E%3Ccircle cx='180' cy='40' r='2'/%3E%3Ccircle cx='300' cy='80' r='3'/%3E%3Ccircle cx='470' cy='50' r='2'/%3E%3Ccircle cx='540' cy='110' r='3'/%3E%3Ccircle cx='400' cy='130' r='2'/%3E%3C/g%3E%3Cpath d='M0 300 L120 210 L220 280 L340 190 L470 270 L600 200 V340 H0Z' fill='%23142034'/%3E%3Cg fill='%23e8eef7' opacity='.8'%3E%3Crect x='250' y='240' width='14' height='40'/%3E%3Ccircle cx='257' cy='232' r='9'/%3E%3C/g%3E%3C/svg%3E" alt="夜行与独处专题主视觉：深蓝夜空下的山脊线与孤独行走的身影" width="600" height="340">
+          <span class="ac-topic-status">更新至 EP05</span>
+        </div>
+        <div class="ac-topic-body">
+          <h3>夜行与独处</h3>
+          <p>关于独处的成年生活影像。我们邀请成年人讲述一个人吃饭、旅行、过节与生病的时刻，不美化孤独，也不贩卖焦虑。</p>
+          <ul class="ac-topic-list">
+            <li>EP05《一个人搬家的第十次》</li>
+            <li>EP04《独居第五年的冰箱》</li>
+            <li>EP03《深夜书店的常客》</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="ac-topic">
+        <div class="ac-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%23e8dfd0'/%3E%3Crect x='60' y='70' width='220' height='200' rx='8' fill='%23c4553f'/%3E%3Crect x='300' y='110' width='240' height='160' rx='8' fill='%233d2a1c'/%3E%3Cg fill='%23f6efe2'%3E%3Crect x='90' y='100' width='150' height='10' rx='5'/%3E%3Crect x='90' y='130' width='110' height='10' rx='5'/%3E%3Crect x='330' y='140' width='170' height='10' rx='5'/%3E%3Crect x='330' y='170' width='130' height='10' rx='5'/%3E%3C/g%3E%3Ccircle cx='480' cy='50' r='40' fill='%23f2b544' opacity='.6'/%3E%3C/svg%3E" alt="成年人的家庭课专题主视觉：暖色书本与桌面构成的家庭学习场景" width="600" height="340">
+          <span class="ac-topic-status">更新至 EP06</span>
+        </div>
+        <div class="ac-topic-body">
+          <h3>成年人的家庭课</h3>
+          <p>成为成年人的一部分，是学会与家人重新相处。我们记录亲子、赡养、兄弟姐妹与代际沟通的真实片段。</p>
+          <ul class="ac-topic-list">
+            <li>EP06《教父母用手机的一年》</li>
+            <li>EP05《兄妹三人的分家协商会》</li>
+            <li>EP04《带父母体检攻略》</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======== S5 创作者矩阵（双列简介） ======== -->
+<section class="ac-section" id="acAuthors">
+  <div class="ac-wrap">
+    <div class="ac-section-head">
+      <div>
+        <span class="ac-eyebrow">Creators / 创作者矩阵</span>
+        <h2>把镜头交给值得信赖的<span>原创创作者</span></h2>
+        <p class="ac-section-desc">亚洲成年人社区目前签约与合作的创作者超过 180 位，他们来自纪录片、新闻、设计、餐饮与心理等行业。所有档案可查、作品可溯，这是我们对内容生态的承诺。</p>
+      </div>
+      <a class="ac-btn ac-btn-ghost" href="#acSubmitBox">申请成为创作者</a>
+    </div>
+
+    <div class="ac-authors">
+      <article class="ac-author">
+        <div class="ac-avatar ac-av-1">程</div>
+        <div>
+          <h3>程野工作室 <span class="ac-role">· 纪录片</span></h3>
+          <p>专注城市街头与普通人的长期跟拍。团队三人，习惯用三个月换一支五分钟的片子，代表作《凌晨四点的早餐铺》。《成年生活图鉴》主创团队之一，坚持不用旁白解释情绪。</p>
+          <div class="ac-author-stats"><span>作品 46</span><span>粉丝 38.2 万</span></div>
+          <button class="ac-author-more" type="button" data-author="程野工作室">查看作者档案</button>
+        </div>
+      </article>
+
+      <article class="ac-author">
+        <div class="ac-avatar ac-av-2">苏</div>
+        <div>
+          <h3>苏杏 <span class="ac-role">· 人物访谈</span></h3>
+          <p>前财经记者，现为独立访谈创作者。擅长把成年人的职业选择讲成有账本、有犹豫的故事，采访前必做三小时背景资料。《工位之外》系列主理人，问题直接但从不冒犯。</p>
+          <div class="ac-author-stats"><span>作品 31</span><span>粉丝 26.7 万</span></div>
+          <button class="ac-author-more" type="button" data-author="苏杏">查看作者档案</button>
+        </div>
+      </article>
+
+      <article class="ac-author">
+        <div class="ac-avatar ac-av-3">陆</div>
+        <div>
+          <h3>陆知微 <span class="ac-role">· 生活记录</span></h3>
+          <p>拍饭桌与厨房的家庭影像作者，认为成年人的关系都藏在细节里。她的片子几乎没有音乐，只有切菜声、碗筷声与偶尔的沉默，《两个人的饭桌》因此被很多观众反复观看。</p>
+          <div class="ac-author-stats"><span>作品 58</span><span>粉丝 41.5 万</span></div>
+          <button class="ac-author-more" type="button" data-author="陆知微">查看作者档案</button>
+        </div>
+      </article>
+
+      <article class="ac-author">
+        <div class="ac-avatar ac-av-4">林</div>
+        <div>
+          <h3>林岸 <span class="ac-role">· 城市探索</span></h3>
+          <p>夜行影像创作者，十年间拍遍了十几座城市的末班地铁与便利店。擅长用长镜头与自然光完成城市观察，作品多次进入平台年度精选，是亚洲成年人社区口碑稳定的创作者。</p>
+          <div class="ac-author-stats"><span>作品 72</span><span>粉丝 53.9 万</span></div>
+          <button class="ac-author-more" type="button" data-author="林岸">查看作者档案</button>
+        </div>
+      </article>
+
+      <article class="ac-author">
+        <div class="ac-avatar ac-av-5">何</div>
+        <div>
+          <h3>何小满 <span class="ac-role">· 实用技巧</span></h3>
+          <p>前家居安装工程师，把成年人的独立生活技能拍成步骤清晰的视频。选题全部来自观众来信，坚持现场实拍、不摆拍、不收品牌费用，被用户称为“最值得信赖的独居教程作者”。</p>
+          <div class="ac-author-stats"><span>作品 39</span><span>粉丝 19.4 万</span></div>
+          <button class="ac-author-more" type="button" data-author="何小满">查看作者档案</button>
+        </div>
+      </article>
+
+      <article class="ac-author">
+        <div class="ac-avatar ac-av-1">周</div>
+        <div>
+          <h3>周而 <span class="ac-role">· 情感故事</span></h3>
+          <p>声音与文字双线创作者，专注成年人迟到的表达。她常让受访者把想说的话写下来再朗读，镜头只拍手与纸。作品情绪克制，却常被观众留言说“像替我说完了一段话”。</p>
+          <div class="ac-author-stats"><span>作品 27</span><span>粉丝 22.1 万</span></div>
+          <button class="ac-author-more" type="button" data-author="周而">查看作者档案</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======== S6 图文索引 ======== -->
+<section class="ac-section alt" id="acIndex">
+  <div class="ac-wrap">
+    <div class="ac-section-head">
+      <div>
+        <span class="ac-eyebrow">Index / 图文索引</span>
+        <h2>来不及看视频？<span>先读图文摘要</span></h2>
+        <p class="ac-section-desc">编辑部把本周重点影像整理成 5 篇图文索引，每篇附关键信息与观看入口，方便通勤路上快速了解亚洲成年人的内容更新。</p>
+      </div>
+    </div>
+    <div class="ac-index">
+      <article class="ac-index-card">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Crect width='480' height='320' fill='%23f2b544'/%3E%3Ccircle cx='380' cy='70' r='54' fill='%23fff3dd' opacity='.7'/%3E%3Cpath d='M0 260 Q120 210 240 250 T480 230 V320 H0Z' fill='%23c98a12'/%3E%3Cg fill='%23241a00'%3E%3Crect x='70' y='120' width='90' height='110' rx='6'/%3E%3Crect x='180' y='90' width='70' height='140' rx='6'/%3E%3C/g%3E%3C/svg%3E" alt="图文索引配图：暖黄色调的城市剪影与窗口构成的生活图鉴封面" width="480" height="320">
+        <div>
+          <h3>成年生活图鉴 EP12：住得远，是不是一种妥协</h3>
+          <p>编辑部对话六位跨城通勤者，整理出时间成本、租金账本与通勤幸福感的对照表。</p>
+        </div>
+      </article>
+      <article class="ac-index-card">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Crect width='480' height='320' fill='%232f5f9e'/%3E%3Cg stroke='%23e8eef7' stroke-width='5' fill='none' opacity='.85'%3E%3Cpath d='M60 240 L140 150 L220 200 L300 110 L380 170 L440 130'/%3E%3C/g%3E%3Cg fill='%23f2b544'%3E%3Ccircle cx='140' cy='150' r='9'/%3E%3Ccircle cx='300' cy='110' r='9'/%3E%3Ccircle cx='440' cy='130' r='9'/%3E%3C/g%3E%3Crect y='270' width='480' height='50' fill='%231b2a45' opacity='.5'/%3E%3C/svg%3E" alt="图文索引配图：蓝色背景上的职业转型路线折线图与节点" width="480" height="320">
+        <div>
+          <h3>35 岁转行：三位成年人给出的真实成本清单</h3>
+          <p>从报名费、学习周期到第一份收入，我们把转行成本拆成可比较的数字。</p>
+        </div>
+      </article>
+      <article class="ac-index-card">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Crect width='480' height='320' fill='%233d8c74'/%3E%3Cg fill='%23f2e6c8' opacity='.9'%3E%3Ccircle cx='120' cy='120' r='42'/%3E%3Ccircle cx='240' cy='90' r='30'/%3E%3Ccircle cx='350' cy='140' r='50'/%3E%3C/g%3E%3Cpath d='M0 250 Q160 210 320 250 T480 220 V320 H0Z' fill='%231f5a4a'/%3E%3C/svg%3E" alt="图文索引配图：绿色背景上的人物圆形头像与家庭课程主题" width="480" height="320">
+        <div>
+          <h3>和父母重新相处：一份成年人的家庭沟通笔记</h3>
+          <p>来自《成年人的家庭课》的六条具体建议，包含对话示例与常见误区。</p>
+        </div>
+      </article>
+      <article class="ac-index-card">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Crect width='480' height='320' fill='%231b2a45'/%3E%3Cg fill='%23f2b544'%3E%3Crect x='70' y='190' width='36' height='80'/%3E%3Crect x='130' y='150' width='36' height='120'/%3E%3Crect x='190' y='110' width='36' height='160'/%3E%3Crect x='250' y='170' width='36' height='100'/%3E%3Crect x='310' y='80' width='36' height='190'/%3E%3C/g%3E%3Ccircle cx='410' cy='80' r='28' fill='%23e8eef7' opacity='.7'/%3E%3C/svg%3E" alt="图文索引配图：深色背景上的柱状数据与口碑统计图标" width="480" height="320">
+        <div>
+          <h3>季度口碑报告：观众最在意的其实是“真实”</h3>
+          <p>我们整理了 1.2 万条观众留言，提取出五个高频关键词与三个改进方向。</p>
+        </div>
+      </article>
+      <article class="ac-index-card">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Crect width='480' height='320' fill='%23c4553f'/%3E%3Cg fill='%23f6efe2' opacity='.9'%3E%3Crect x='70' y='80' width='150' height='180' rx='8'/%3E%3Crect x='250' y='120' width='160' height='140' rx='8'/%3E%3C/g%3E%3Cg fill='%23c4553f'%3E%3Crect x='92' y='110' width='100' height='8' rx='4'/%3E%3Crect x='92' y='136' width='70' height='8' rx='4'/%3E%3Crect x='272' y='150' width='110' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="图文索引配图：红色背景上并列的两张内容卡片与文字摘要" width="480" height="320">
+        <div>
+          <h3>独居第五年：冰箱里的成年生活取样</h3>
+          <p>从一台冰箱的采购清单，看独居成年人的饮食、预算与自我照顾。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 深度观察（关键词解析 800 字以上） ======== -->
+<section class="ac-section" id="acDeep">
+  <div class="ac-wrap">
+    <div class="ac-deep">
+      <span class="ac-eyebrow">Insight / 深度观察</span>
+      <h2>我们如何理解“亚洲成年人”：一次面向内容生态的完整解析</h2>
+      <p>作为一家专注成年生活影像的企业，亚洲成年人官方网站对关键词的理解不是标签，而是一套内容方法论。以下四节，是我们过去几年在选题、拍摄与社区运营中形成的判断，也是对外解释品牌定位的正式文本。</p>
+
+      <figure>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 440'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%231b2a45'/%3E%3Cstop offset='1' stop-color='%232f5f9e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1000' height='440' fill='url(%23g1)'/%3E%3Cg fill='none' stroke='%23f2b544' stroke-width='3' opacity='.75'%3E%3Ccircle cx='220' cy='220' r='110'/%3E%3Ccircle cx='520' cy='220' r='150'/%3E%3Ccircle cx='820' cy='220' r='90'/%3E%3C/g%3E%3Cg fill='%23e8eef7'%3E%3Ccircle cx='220' cy='220' r='12'/%3E%3Ccircle cx='520' cy='220' r='12'/%3E%3Ccircle cx='820' cy='220' r='12'/%3E%3C/g%3E%3Cg fill='%23e8eef7' opacity='.55'%3E%3Crect x='60' y='370' width='220' height='8' rx='4'/%3E%3Crect x='340' y='370' width='300' height='8' rx='4'/%3E%3Crect x='700' y='370' width='240' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="深度观察配图：深蓝色背景上的内容生态同心圆与连接节点示意" width="1000" height="440">
+        <figcaption>亚洲成年人内容生态模型：个体故事、专题企划与社区反馈形成持续循环。</figcaption>
+      </figure>
+
+      <h3>一、从个体处境出发，而不是从概念出发</h3>
+      <p>“亚洲成年人”这四个字，如果只当作一个宽泛的人群标签，很容易滑向空泛。我们在内部选题会上有一个硬规则：任何一支片子，必须能回答三个问题——这个人具体在做什么、他为什么这么做、这件事对他今年意味着什么。比如《凌晨四点的早餐铺》，我们没有去谈“奋斗”这样的大词，而是记录店主如何判断面团发酵的时间、如何在六点半之前把第一锅包子摆上蒸笼。成年人生活的重量，往往藏在这些可被观察的动作里。这也是我们坚持原创、反对摆拍的原因：真实的细节无法被剧本替代，而观众对这种真实的辨识度极高。平台上线至今，长评里出现频率最高的词是“像我”，这正是内容生态能够持续运营的基础。</p>
+
+      <h3>二、成年人的叙事需要分层：职场、家庭与自我</h3>
+      <p>我们把内容划分为三个长期层面。第一层是职场与生计，包括转行、失业、副业、账本与通勤，这是成年人最现实的压力来源，也是《工位之外》《手艺人的选择》两个企划的核心。第二层是家庭与关系，涵盖亲子、赡养、伴侣与代际沟通，《成年人的家庭课》用整季的篇幅讨论“如何和父母重新相处”，其中一集《教父母用手机的一年》上线后收到两千多条留言，很多观众第一次在公开评论区写下自己的家庭细节。第三层是自我与独处，《夜行与独处》刻意不去美化孤独，只是把一个人搬家、一个人体检、一个人过节的时刻如实拍下来。三个层面并非并列，而是互相牵动：一次转行会改变家庭预算，一段关系变化会重塑独处的方式。只有把层次讲清楚，垂直领域的内容才不至于变成情绪消费，品牌所强调的品质与专业也才有落点。</p>
+
+      <div class="ac-deep-grid">
+        <div class="ac-deep-note"><b>选题原则</b>先有具体的人与场景，再有主题词；拒绝先定观点后找素材。</div>
+        <div class="ac-deep-note"><b>拍摄原则</b>优先自然光与同期声，减少配乐推动情绪，保留沉默与停顿。</div>
+        <div class="ac-deep-note"><b>审核原则</b>涉及家庭、医疗与财务的内容，须经当事人复核并签署授权。</div>
+      </div>
+
+      <h3>三、内容生态：创作者、企业与社区的三方协作</h3>
+      <p>一家视频品牌能否长期运营，取决于它是否愿意把关系写清楚。在亚洲成年人官方网站，创作者不是流量供给方，而是共同作者。我们对签约创作者提供选题共创、法律与版权支持、设备与后期资源，同时要求全部内容正版授权、可追溯素材来源。企业与品牌的合作则通过专题定制与内容共创完成，合作标识在片头片尾明示，不允许以软性植入替代披露。社区层面，我们开放投稿入口与创作者申请通道，设置季度评审与观众投票，让内容选择不完全由编辑部单方面决定。这种做法在短期内牺牲了一部分更新速度，却让平台的口碑逐年稳定。过去十二个月，我们的内容复看率提升了 31%，用户举报率下降到千分之零点三，这些数字比播放量更能说明内容生态的健康度。</p>
+
+      <h3>四、面向未来：把“成年”讲成一种持续成长的状态</h3>
+      <p>成年人不是一个完成态。我们更愿意把它理解为一种持续成长的状态：学会为自己的选择负责，也学会承认犹豫；能够照顾别人，也允许自己被照顾。2026 年冬季，我们将启动三个新企划——记录中年再学习的《重新上学的人》、关注成年人体检与健康的《身体的提醒》、以及面向县城与小城成年人的《小城成年礼》。同时，创作者扶持计划将扩大到 60 个名额，提供从脚本到发行的全流程支持，并首次开放企业共创通道。我们希望亚洲成年人官方网站不只是一个播放页面的集合，而是一份可以被反复查阅的成年生活档案。无论你是观众、创作者还是合作企业，只要你相信真实的影像有力量，这里都值得信赖地为你保留一个位置。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== S6 用户评价（评分摘要 + 短评列表） ======== -->
+<section class="ac-section alt" id="acReviews">
+  <div class="ac-wrap">
+    <div class="ac-section-head">
+      <div>
+        <span class="ac-eyebrow">Reviews / 社区口碑</span>
+        <h2>观众怎么说：<span>成年人的真实反馈</span></h2>
+        <p class="ac-section-desc">以下评价来自平台真实观看记录与社区留言，按内容、清晰度、创作者表达与社区氛围四个维度汇总，我们不做筛选式展示。</p>
+      </div>
+    </div>
+
+    <div class="ac-reviews">
+      <aside class="ac-scoreboard">
+        <div class="big">4.8<small> / 5.0</small></div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p style="font-size:.84rem;color:#b9c6da;margin-bottom:1rem;">基于 12,486 条有效评价（近 90 天）</p>
+        <div class="ac-bar"><span>内容</span><i style="--w:96%"></i><span>4.8</span></div>
+        <div class="ac-bar"><span>画质</span><i style="--w:98%"></i><span>4.9</span></div>
+        <div class="ac-bar"><span>表达</span><i style="--w:94%"></i><span>4.7</span></div>
+        <div class="ac-bar"><span>氛围</span><i style="--w:92%"></i><span>4.6</span></div>
+      </aside>
+
+      <div class="ac-review-list">
+        <article class="ac-review">
+          <p>《凌晨四点的早餐铺》我看了两遍。第二遍是给我爸看的，他做了一辈子小吃，看完只说了一句“拍得对”。这句评价比什么奖都重。</p>
+          <footer><b>@面汤不加葱</b><span>观看 3 次</span><span>内容 · 真实</span></footer>
+        </article>
+        <article class="ac-review">
+          <p>高清是真的高清，地铁末班车那支片子里连扶手上的划痕都看得清。作为一个做后期的人，我知道这种画质背后是实打实的设备和人力。</p>
+          <footer><b>@后期老陈</b><span>观看 1 次</span><span>画质 · 专业</span></footer>
+        </article>
+        <article class="ac-review">
+          <p>一开始以为又是那种贩卖焦虑的成年话题，结果看完《工位之外》发现它只是在讲人。没有催促你成功，也没有嘲笑你失败，这点很难得。</p>
+          <footer><b>@南站以西</b><span>观看 6 次</span><span>表达 · 克制</span></footer>
+        </article>
+        <article class="ac-review">
+          <p>建议把《教父母用手机的一年》转给所有在外地工作的人。我妈看完主动问我怎么视频通话，我们第一次聊了四十分钟。</p>
+          <footer><b>@阿桃不在家</b><span>观看 2 次</span><span>家庭 · 共鸣</span></footer>
+        </article>
+        <article class="ac-review">
+          <p>评论区氛围是我留下来的原因。大家真的在讨论生活，而不是互相攻击。很少见一个讲成年人的社区能做到这么克制。</p>
+          <footer><b>@三点半的猫</b><span>观看 12 次</span><span>氛围 · 社区</span></footer>
+        </article>
+        <article class="ac-review">
+          <p>投稿流程比想象中顺，编辑回信很快，还给了三条具体的修改建议。虽然最后没入选，但这次沟通让我愿意继续拍下去。</p>
+          <footer><b>@小城摄影阿邝</b><span>投稿 2 次</span><span>服务 · 创作者</span></footer>
+        </article>
+        <article class="ac-review">
+          <p>唯一想提的意见是，能不能给长片加个章节标记。《手艺人的选择》信息量太大，中间停下来接电话就得重新找位置。</p>
+          <footer><b>@需要倍速的人</b><span>观看 8 次</span><span>功能建议</span></footer>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== S7 企业动态 + 合作品牌 ======== -->
+<section class="ac-section" id="acNews">
+  <div class="ac-wrap ac-split">
+    <div>
+      <div class="ac-section-head" style="margin-bottom:1.2rem;">
+        <div>
+          <span class="ac-eyebrow">News / 企业动态</span>
+          <h2>亚洲成年人<span>官方发布与内容更新</span></h2>
+        </div>
+      </div>
+      <div class="ac-news">
+        <article class="ac-news-item">
+          <div class="ac-news-date"><b>11.18</b>2026</div>
+          <div>
+            <h3>2026 冬季创作者扶持计划开放报名，名额扩至 60 位</h3>
+            <p>面向成年生活题材的原创作者，提供选题共创、版权支持与发行资源，报名截止 12 月 20 日。</p>
+          </div>
+        </article>
+        <article class="ac-news-item">
+          <div class="ac-news-date"><b>11.09</b>2026</div>
+          <div>
+            <h3>《成年生活图鉴》第二季定档 12 月 3 日全网上线</h3>
+            <p>新一季覆盖六座城市，新增“县城成年人”单元，全部内容以 4K 规格制作。</p>
+          </div>
+        </article>
+        <article class="ac-news-item">
+          <div class="ac-news-date"><b>10.27</b>2026</div>
+          <div>
+            <h3>平台上线章节标记与片单收藏功能</h3>
+            <p>应社区反馈，长片支持章节跳转，收藏片单可跨设备同步，本期同步优化移动端播放体验。</p>
+          </div>
+        </article>
+        <article class="ac-news-item">
+          <div class="ac-news-date"><b>10.12</b>2026</div>
+          <div>
+            <h3>亚洲成年人与四家在地文化机构达成内容合作</h3>
+            <p>合作覆盖城市影像档案与口述史采集，首批联合内容将在 2027 年第一季度发布。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div>
+      <div class="ac-section-head" style="margin-bottom:1.2rem;">
+        <div>
+          <span class="ac-eyebrow">Partners / 合作与共创</span>
+          <h2>共同守护<span>真实影像的伙伴</span></h2>
+        </div>
+      </div>
+      <div class="ac-partners">
+        <div class="ac-partner">城市影像档案馆<span>内容共建</span></div>
+        <div class="ac-partner">南岸独立书店联盟<span>线下放映</span></div>
+        <div class="ac-partner">青禾职业教育<span>选题支持</span></div>
+        <div class="ac-partner">慢工手作工坊<span>专题共创</span></div>
+        <div class="ac-partner">拾光放映社<span>社区放映</span></div>
+        <div class="ac-partner">同行心理研究所<span>专业顾问</span></div>
+      </div>
+      <div id="acSubmitBox" style="margin-top:1.2rem;background:#fff;border:1px solid var(--ac-line);border-radius:14px;padding:1.1rem 1.2rem;">
+        <h3 style="font-size:1rem;margin-bottom:.4rem;">投稿与共创通道</h3>
+        <p style="font-size:.86rem;color:var(--ac-muted);">如果你是成年生活题材的创作者，或希望以企业身份参与内容共创，欢迎提交作品说明与联系方式，编辑部将在 5 个工作日内回复。</p>
+        <div class="ac-ops" style="margin-top:.8rem;">
+          <button class="ac-op is-on" type="button" id="acSubmitBtn2">提交投稿意向</button>
+          <button class="ac-op" type="button" data-share>分享本页</button>
+          <button class="ac-op" type="button" id="acCopyBtn">复制页面链接</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== S7 FAQ ======== -->
+<section class="ac-section alt" id="acFaq">
+  <div class="ac-wrap">
+    <div class="ac-section-head" style="justify-content:center;text-align:center;">
+      <div>
+        <span class="ac-eyebrow">FAQ / 帮助中心</span>
+        <h2>关于亚洲成年人官方网站的<span>常见问题</span></h2>
+      </div>
+    </div>
+    <div class="ac-faq">
+      <details>
+        <summary>平台的内容都是原创正版吗？</summary>
+        <p>是。亚洲成年人官方网站上线的所有影像均由平台签约创作者或合作机构提供，签署正式授权文件，素材来源可追溯。我们拒绝搬运与二次剪辑的未授权内容，若发现侵权可通过页面反馈入口举报。</p>
+      </details>
+      <details>
+        <summary>如何成为平台的签约创作者？</summary>
+        <p>点击页面中的“申请成为创作者”或“投稿”入口，提交近两年内的原创作品链接、题材方向与更新计划。编辑部会在 5 个工作日内初审，通过后进入面谈与试稿环节。我们更看重持续的选题能力，而不是单条爆款。</p>
+      </details>
+      <details>
+        <summary>观看视频需要付费吗？</summary>
+        <p>目前绝大多数内容免费观看，全部支持高清播放。部分专题的加长版与幕后花絮将作为会员内容在后续推出，上线前会提前在公告条与动态区公示，不会对已有免费内容做降级处理。</p>
+      </details>
+      <details>
+        <summary>为什么有些内容标注了“当事人复核”？</summary>
+        <p>涉及家庭、医疗、财务与个人经历的题材，我们会在成片后邀请当事人完整观看并确认表述，必要时修改或删除片段。这是平台对真实与尊重的底线要求，也是企业社会责任的一部分。</p>
+      </details>
+      <details>
+        <summary>企业可以合作定制专题吗？</summary>
+        <p>可以。我们接受与成年生活主题相关的品牌共创，合作内容会在片头片尾明确标注合作方，并遵守广告披露规范。合作不干预创作结论，也不允许指定受访者给出预设答案。</p>
+      </details>
+      <details>
+        <summary>能否下载视频用于线下放映？</summary>
+        <p>个人学习用途可在播放页申请下载授权；机构或社区线下放映需通过合作通道提交申请，我们会提供高清文件与放映规范。未经授权的公开传播属于侵权行为，平台将追究责任。</p>
+      </details>
+      <details>
+        <summary>我想对某一期内容提出意见，怎么反馈？</summary>
+        <p>每条视频下方均有反馈入口，也可以在本页通过分享与反馈按钮提交。我们会按周汇总意见，涉及事实错误的内容将在核实后公开更正说明，处理进度同步至企业动态区。</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ======== S8 页脚 ======== -->
+<footer class="ac-foot">
+  <div class="ac-wrap">
+    <div class="ac-foot-grid">
+      <div>
+        <div class="ac-foot-brand">
+          <div class="ac-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.5" r="3.6" fill="#f2b544"/><path d="M4 21c1.6-4.6 4.6-6.8 8-6.8s6.4 2.2 8 6.8z" fill="#e8eef7"/></svg>
+          </div>
+          <strong>亚洲成年人</strong>
+        </div>
+        <p>亚洲成年人官方网站，专注成年生活影像的原创视频内容品牌。我们以真实、品质与专业为底色，为创作者与企业搭建持续运营的内容生态。</p>
+        <p style="margin-top:.7rem;font-size:.8rem;color:#8fa1bd;">官方网站 · 版权所有 · 持续运营中</p>
+      </div>
+      <div>
+        <h3>内容</h3>
+        <ul>
+          <li><a href="#acFocus">影像精选</a></li>
+          <li><a href="#acTopics">专题企划</a></li>
+          <li><a href="#acIndex">图文索引</a></li>
+          <li><a href="#acDeep">深度观察</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>社区</h3>
+        <ul>
+          <li><a href="#acAuthors">创作者矩阵</a></li>
+          <li><a href="#acReviews">观众评价</a></li>
+          <li><a href="#acSubmitBox">投稿与共创</a></li>
+          <li><a href="#acFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>企业</h3>
+        <ul>
+          <li><a href="#acNews">企业动态</a></li>
+          <li><a href="#acDeep">品牌故事</a></li>
+          <li><a href="#acNews">合作品牌</a></li>
+          <li><a href="#acFaq">版权与合作说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ac-foot-bottom">
+      <span>© 2026 亚洲成年人官方网站 版权所有</span>
+      <span>内容备案号：影字-2026-1108　|　持续运营 · 品质内容 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ac-top-btn" id="acTopBtn" type="button" aria-label="回到顶部">↑</button>
+
+<div class="ac-toast" id="acToast" role="status" aria-live="polite"></div>
+
+<div class="ac-modal" id="acModal" role="dialog" aria-modal="true" aria-labelledby="acModalTitle">
+  <div class="ac-modal-box">
+    <button class="ac-modal-close" id="acModalClose" type="button" aria-label="关闭">×</button>
+    <h3 id="acModalTitle">提示</h3>
+    <p id="acModalBody"></p>
+    <div class="ac-modal-actions" id="acModalActions"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toastEl = document.getElementById('acToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('acBurger');
+  var nav = document.getElementById('acNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('acSearchForm');
+  var searchInput = document.getElementById('acSearchInput');
+  var searchFeedback = document.getElementById('acSearchFeedback');
+  var searchIndex = [
+    {t:'凌晨四点的早餐铺', k:'纪录片 · 日常记录 · 程野工作室'},
+    {t:'工位之外 EP07 转行做面包师', k:'人物访谈 · 苏杏'},
+    {t:'成年生活图鉴 第二季', k:'专题企划 · 城市探索'},
+    {t:'城市夜归人', k:'城市探索 · 林岸'},
+    {t:'手艺人的选择', k:'专题企划 · 职业选择'},
+    {t:'成年人的家庭课 教父母用手机', k:'家庭 · 代际沟通'},
+    {t:'独居第五年：冰箱里的成年生活', k:'生活记录 · 陆知微'},
+    {t:'何小满 独居实用技巧', k:'创作者 · 实用技巧'}
+  ];
+  function doSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchFeedback.innerHTML = '试试搜索“早餐铺”“转行”“独处”或创作者昵称。';
+      searchFeedback.classList.add('is-open');
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.t.indexOf(q) > -1 || item.k.indexOf(q) > -1;
+    });
+    if(hits.length){
+      searchFeedback.innerHTML = '找到 <b>' + hits.length + '</b> 条相关内容：' +
+        hits.map(function(h){ return '<div style="margin-top:.3rem;">· ' + h.t + ' <span style="color:#93a1b8;">（' + h.k + '）</span></div>'; }).join('');
+    }else{
+      searchFeedback.innerHTML = '暂未匹配到“<b>' + q + '</b>”，建议改用更短的关键词，或前往<a href="#acIndex" style="color:#2f5f9e;font-weight:600;">图文索引</a>浏览片单。';
+    }
+    searchFeedback.classList.add('is-open');
+  }
+  searchForm.addEventListener('submit', function(e){ e.preventDefault(); doSearch(); });
+  document.getElementById('acSearchBtn').addEventListener('click', function(e){ e.preventDefault(); doSearch(); });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){ searchFeedback.classList.remove('is-open'); }
+  });
+  document.addEventListener('click', function(e){
+    if(!searchForm.contains(e.target)){ searchFeedback.classList.remove('is-open'); }
+  });
+
+  /* 点赞 +1/-1 */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var raw = span ? span.textContent : '';
+      var num = 0, hasWan = raw.indexOf('万') > -1;
+      if(hasWan){ num = parseFloat(raw.replace('万','')) * 10000; } else { num = parseInt(raw.replace(/,/g,''),10) || 0; }
+      var on = btn.classList.toggle('is-on');
+      num = on ? num + 1 : Math.max(0, num - 1);
+      if(span){
+        if(hasWan || num >= 10000){
+          span.textContent = (num/10000).toFixed(1) + '万';
+        }else{
+          span.textContent = num.toLocaleString('en-US');
+        }
+      }
+      toast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+
+  /* 收藏切换 */
+  document.querySelectorAll('[data-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.textContent = on ? '已收藏 ♥' : '收藏';
+      toast(on ? '已加入收藏片单' : '已从收藏片单移除');
+    });
+  });
+
+  /* 复制链接 */
+  function copyLink(){
+    var url = window.location.href;
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){ toast('页面链接已复制'); }, function(){ toast('复制失败，请手动选择地址栏复制'); });
+    }else{
+      var ta = document.createElement('textarea');
+      ta.value = url;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand('copy'); toast('页面链接已复制'); }catch(err){ toast('复制失败，请手动复制'); }
+      document.body.removeChild(ta);
+    }
+  }
+  var copyBtn = document.getElementById('acCopyBtn');
+  if(copyBtn){ copyBtn.addEventListener('click', copyLink); }
+
+  /* 弹窗 */
+  var modal = document.getElementById('acModal');
+  var modalTitle = document.getElementById('acModalTitle');
+  var modalBody = document.getElementById('acModalBody');
+  var modalActions = document.getElementById('acModalActions');
+  function openModal(title, body, actions){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = body;
+    modalActions.innerHTML = '';
+    (actions || []).forEach(function(a){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'ac-btn ' + (a.primary ? 'ac-btn-gold' : 'ac-btn-ghost');
+      b.textContent = a.text;
+      b.addEventListener('click', function(){
+        if(a.fn){ a.fn(); } else { closeModal(); }
+      });
+      modalActions.appendChild(b);
+    });
+    if(!actions || !actions.length){
+      var c = document.createElement('button');
+      c.type = 'button';
+      c.className = 'ac-btn ac-btn-ghost';
+      c.textContent = '知道了';
+      c.addEventListener('click', closeModal);
+      modalActions.appendChild(c);
+    }
+    modal.classList.add('is-open');
+  }
+  function closeModal(){ modal.classList.remove('is-open'); }
+  document.getElementById('acModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+
+  /* 分享 */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('分享这篇内容', '选择你常用的方式，把亚洲成年人的真实影像分享给身边的人。', [
+        {text:'复制链接', primary:true, fn:function(){ copyLink(); closeModal(); }},
+        {text:'微信好友', fn:function(){ toast('请打开微信，粘贴链接发送给好友'); closeModal(); }},
+        {text:'微博', fn:function(){ toast('请打开微博，粘贴链接发布'); closeModal(); }},
+        {text:'取消', fn:closeModal}
+      ]);
+    });
+  });
+
+  /* 作者档案弹窗 */
+  var authorData = {
+    '程野工作室':'纪录片团队，专注城市街头与普通人的长期跟拍，代表作《凌晨四点的早餐铺》。坚持三个月换一支片子的节奏，全部作品由平台原创出品。',
+    '苏杏':'前财经记者，独立访谈创作者，《工位之外》系列主理人。采访前必做三小时资料准备，擅长把职业选择讲成有账本的故事。',
+    '陆知微':'家庭与厨房影像作者，《两个人的饭桌》创作者。作品几乎不使用配乐，以同期声呈现成年人关系的细节。',
+    '林岸':'夜行影像创作者，拍摄过十几座城市的末班地铁与便利店，作品多次进入平台年度精选，社区口碑稳定。',
+    '何小满':'前家居安装工程师，把成年人的独立生活技能拍成步骤清晰的视频，坚持现场实拍、不摆拍、不收品牌费用。',
+    '周而':'声音与文字双线创作者，专注成年人迟到的表达。《给自己的信》系列以手与信纸为镜头语言，情绪克制。'
+  };
+  document.querySelectorAll('[data-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      openModal(name + ' · 创作者档案', (authorData[name] || '该创作者暂无公开档案。') + '<br><br>全部作品均可在影像精选页查看，档案信息由创作者本人确认。', [
+        {text:'查看作品', primary:true, fn:function(){ closeModal(); document.getElementById('acFocus').scrollIntoView({behavior:'smooth'}); }},
+        {text:'关闭', fn:closeModal}
+      ]);
+    });
+  });
+
+  /* 投稿入口 */
+  function openSubmit(){
+    openModal('投稿与共创', '请准备作品简介（200 字以内）、题材方向与联系方式，发送至投稿邮箱：submit@asia-adults.example。编辑部将在 5 个工作日内回复，未入选作品也会给出具体建议。', [
+      {text:'复制投稿邮箱', primary:true, fn:function(){ toast('投稿邮箱已复制：submit@asia-adults.example'); closeModal(); }},
+      {text:'稍后再说', fn:closeModal}
+    ]);
+  }
+  document.getElementById('acSubmitBtn').addEventListener('click', openSubmit);
+  var submit2 = document.getElementById('acSubmitBtn2');
+  if(submit2){ submit2.addEventListener('click', openSubmit); }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('acTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ topBtn.classList.add('is-show'); } else { topBtn.classList.remove('is-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* 数字滚动（核心数据） */
+  var stats = document.querySelectorAll('.ac-stat b');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          animateStats();
+          io.disconnect();
+        }
+      });
+    }, {threshold:0.4});
+    var statsWrap = document.querySelector('.ac-stats');
+    if(statsWrap){ io.observe(statsWrap); }
+  }
+  function animateStats(){
+    stats.forEach(function(el){
+      var text = el.textContent;
+      var numeric = parseFloat(text.replace(/[^\d.]/g,''));
+      if(!isFinite(numeric)) return;
+      var suffix = text.replace(/[\d.,]/g,'');
+      var start = null;
+      var dur = 900;
+      function step(ts){
+        if(!start){ start = ts; }
+        var p = Math.min((ts - start)/dur, 1);
+        var eased = 1 - Math.pow(1-p, 3);
+        var val = numeric * eased;
+        if(suffix.indexOf('万') > -1){
+          el.textContent = val.toFixed(0) + ' 万';
+        }else{
+          el.textContent = Math.round(val).toLocaleString('en-US') + suffix;
+        }
+        if(p < 1){ requestAnimationFrame(step); }
+        else{
+          el.textContent = text;
+        }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+})();
+</script>
+</body>
+  </html>
